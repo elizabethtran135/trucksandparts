@@ -1,0 +1,31 @@
+/*
+Theme Name: Assignment 2 Tran Elizabeth
+Theme URI:
+Author: Elizabeth tran
+Description: first theme
+Version: 1.0
+License: Open
+Text domain: web interactivity
+*/
+
+h3 {
+  font-size: 1.25rem;
+}
+p {
+  font-size: .8rem;
+  margin: 0, 3%;
+}
+
+header {
+  background-color: lightblue;
+}
+
+footer {
+  background-color: lightyellow;
+  margin-top: 4%;
+}
+
+/*CUSTOM HOME PAGE STYLING*/
+.image {
+  width: 100%;
+}
