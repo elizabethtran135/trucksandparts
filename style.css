@@ -1,8 +1,8 @@
 /*
-Theme Name: Assignment 2 Tran Elizabeth
+Theme Name: Trucks and Parts
 Theme URI:
-Author: Elizabeth tran
-Description: first theme
+Author: Elizabeth Tran and Erika Jenkins
+Description: Trucks and Parts Rough Draft
 Version: 1.0
 License: Open
 Text domain: web interactivity
@@ -28,4 +28,15 @@ footer {
 /*CUSTOM HOME PAGE STYLING*/
 .image {
   width: 100%;
+}
+
+.single-trucks .container ul li {
+  list-style: none;
+}
+
+.single-trucks .container li:nth-child(even) {
+  background: #f2f2f2;
+}
+.single-trucks .container ul {
+  0 0 0 5px;
 }
