@@ -365,9 +365,6 @@ button#wpforms-submit-46 {
 ############################*/
 
 @media (min-width: 768px){
-  .container {
-      width: 100%;
-      }
 
   .mobile-nav{
     display: none;
@@ -376,7 +373,10 @@ button#wpforms-submit-46 {
   button{
     display: none;
   }
-
+  .row.desktop-nav {
+      width: 100%;
+      margin: 0;
+  }
   .desktop-nav {
     display: inline-flex;
     background-color: white;
@@ -386,6 +386,7 @@ button#wpforms-submit-46 {
     max-width: 150px;
     object-fit: contain;
     padding-left: 20px;
+    display: block;
   }
   #navblue {
     display: inline-flex;
