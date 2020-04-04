@@ -9,25 +9,77 @@ get_header(); ?>
       <?php dynamic_sidebar('hero-image'); ?>
     </div>
   </div>
-  <div class="container">
-    <main class="col-md-12">
+  <main class="col-md-12">
+    <div class="row">
+      <div class="col-md-12 p-4">
+        <?php dynamic_sidebar('about-us'); ?>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-9">
+        <?php dynamic_sidebar('testimonial-home'); ?>
+      </div>
+    </div>
+
+    <div class="trucktypes">
+      <h2>TRUCK TYPES</h2>
+      <p>New, Used, or Reconditioned</p>
       <div class="row">
-        <div class="col-md-12 p-4">
-          <?php dynamic_sidebar('about-us'); ?>
+        <div class="col-md-3">
+          <?php dynamic_sidebar('front-loader-home'); ?>
+          <a href="404.php" class="btn btn-outline-light">FRONT LOADER</a>
+        </div>
+        <div class="col-md-3">
+          <?php dynamic_sidebar('rear-loader-home'); ?>
+          <a href="404.php" class="btn btn-outline-light justify-content-center">REAR LOADER</a>
+        </div>
+        <div class="col-md-3">
+          <?php dynamic_sidebar('side-loader-home'); ?>
+          <a href="404.php" class="btn btn-outline-light">SIDE LOADER</a>
+        </div>
+        <div class="col-md-3">
+          <?php dynamic_sidebar('roll-off-home'); ?>
+          <a href="404.php" class="btn btn-outline-light">ROLL OFF</a>
         </div>
       </div>
+    </div>
+
+    <div class="trucktypes">
       <div class="row">
-        <div class="col-md-4">
-          <?php dynamic_sidebar('bottom-left'); ?>
+        <div class="col-md-3">
+          <?php dynamic_sidebar('container-delivery-home'); ?>
+          <a href="404.php" class="btn btn-outline-light">CONTAINER DELIVERY</a>
         </div>
-        <div class="col-md-4">
-          <?php dynamic_sidebar('bottom-middle'); ?>
+        <div class="col-md-3">
+          <?php dynamic_sidebar('grapple-boom-home'); ?>
+          <a href="#" class="btn btn-outline-light">GRAPPLE BOOM</a>
         </div>
-        <div class="col-md-4">
-          <?php dynamic_sidebar('bottom-right'); ?>
+        <div class="col-md-3">
+          <?php dynamic_sidebar('concrete-mixer-home'); ?>
+          <a href="404.php" class="btn btn-outline-light">CONCRETE MIXER</a>
+        </div>
+        <div class="col-md-3">
+          <?php dynamic_sidebar('cab-chasis-home'); ?>
+          <a href="404.php" class="btn btn-outline-light">CAB & CHASIS</a>
         </div>
       </div>
-    </main>
-  </div>
+    </div>
+
+    <div class="locations">
+      <h2>LOCATIONS</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <?php dynamic_sidebar('map-tampa-home'); ?>
+          <p>1015 South 50th St. Tampa, FL 33619</p>
+        </div>
+        <div class="col-md-6">
+          <?php dynamic_sidebar('map-glenmoore-home'); ?>
+          <p>1620 Horseshoe Pike Glenmoore, PA 19343</p>
+        </div>
+    </div>
+
+    </div>
+  </main>
 
 <?php get_footer(); ?>

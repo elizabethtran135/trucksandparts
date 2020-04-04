@@ -10,7 +10,7 @@
         </div>
 
         <div class="col-md-12">
-          <?php the_post_thumbnail('large'); ?>
+          <?php the_post_thumbnail('full'); ?>
         </div>
 
         <div class="col-md-12">

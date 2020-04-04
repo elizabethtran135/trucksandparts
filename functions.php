@@ -15,6 +15,298 @@ function custom_theme_scripts(){
 }
 
 add_action('wp_enqueue_scripts','custom_theme_scripts');
+/* ================================================
+
+  STANDARD NEEDS FOR POSTS AND PAGES
+
+  ====================================================*/
+/* ================================================
+  Header Widgets
+  ====================================================*/
+
+$custom_image_header = array(
+  'width' => 225,
+  'height' => 120,
+  'uploads' => true,
+);
+
+add_theme_support('custom-header', $custom_image_header);
+
+/*----HEADER CALL EMAIL----*/
+
+register_sidebar(array(
+    'name'          => ('Right Header'),
+    'id'            => 'right-header',
+    'description'   => 'Right widget area in header',
+    'before_widget' => '<div class="widget-header">',
+    'after_widget'  => "</div>",
+    'before_title'  => '<h3 class="header-widget-title">',
+    'after_title'   => '</h3>'
+  ));
+
+/*===============================
+  Add menus to my theme
+=====================================*/
+function register_my_menus(){
+  register_nav_menus(
+    array(
+      'top-menu'    => __( 'Top Menu'),
+      'footer-menu'   => ('Footer Menu'),
+    )
+  );
+}
+
+add_action('init', 'register_my_menus');
+/*===============================
+  Adds Featured Images
+=====================================*/
+
+add_theme_support('post-thumbnails');
+
+/*===============================
+  FOOTER WIDGETS
+=====================================*/
+
+function blank_widgets_init(){
+  register_sidebar(array(
+    'name'          => ('Left Footer'),
+    'id'            => 'left-footer',
+    'description'   => 'Left widget area in footer',
+    'before_widget' => '<div class="widget-footer">',
+    'after_widget'  => "</div>",
+    'before_title'  => '<h3 class="footer-widget-title">',
+    'after_title'   => '</h3>'
+  ));
+  register_sidebar(array(
+    'name'          => ('Middle Footer'),
+    'id'            => 'middle-footer',
+    'description'   => 'Middle widget area in footer',
+    'before_widget' => '<div class="widget-footer">',
+    'after_widget'  => "</div>",
+    'before_title'  => '<h3 class="footer-widget-title">',
+    'after_title'   => '</h3>'
+  ));
+  register_sidebar(array(
+    'name'          => ('Right Footer'),
+    'id'            => 'right-footer',
+    'description'   => 'Right widget area in footer',
+    'before_widget' => '<div class="widget-footer">',
+    'after_widget'  => "</div>",
+    'before_title'  => '<h3 class="footer-widget-title">',
+    'after_title'   => '</h3>'
+  ));
+
+  /*SIDEBAR WIDGETS*/
+  register_sidebar(array(
+    'name'          => ('Right Sidebar'),
+    'id'            => 'right-sidebar',
+    'description'   => 'Right sidebar widget area',
+    'before_widget' => '<div class="widget-right-sidebar">',
+    'after_widget'  => "</div>",
+    'before_title'  => '<h3 class="right-sidebar-widget-title">',
+    'after_title'   => '</h3>'
+  ));
+/*--------------------------------------------
+
+FUNCTIONS FOR SPECIFIC PAGES AND POSTS!
+
+------------------------------*/
+/*------------------------
+HOME PAGE WIDGETS
+-----------------------*/
+register_sidebar(array(
+    'name'          => ('Right Header'),
+    'id'            => 'right-header',
+    'description'   => 'Right widget area in header',
+    'before_widget' => '<div class="widget-header">',
+    'after_widget'  => "</div>",
+    'before_title'  => '<h3 class="header-widget-title">',
+    'after_title'   => '</h3>'
+  ));
+  register_sidebar(array(
+    'name'          => ('Hero Image'),
+    'id'            => 'hero-image',
+    'description'   => 'Hero image area in home page',
+    'before_widget' => '<div class="widget-hero-image">',
+    'after_widget'  => "</div>",
+    'before_title'  => '<h3 class="hero-image-widget-title">',
+    'after_title'   => '</h3>'
+  ));
+  register_sidebar(array(
+    'name'          => ('About Us'),
+    'id'            => 'about-us',
+    'description'   => 'About Us widget area in home page',
+    'before_widget' => '<div class="widget-about-us">',
+    'after_widget'  => "</div>",
+    'before_title'  => '<h3 class="about-us-widget-title">',
+    'after_title'   => '</h3>'
+  ));
+  register_sidebar(array(
+    'name'          => ('Bottom Left'),
+    'id'            => 'bottom-left',
+    'description'   => 'Bottom left widget area in home page',
+    'before_widget' => '<div class="widget-bottom-left">',
+    'after_widget'  => "</div>",
+    'before_title'  => '<h3 class="bottom-left-widget-title">',
+    'after_title'   => '</h3>'
+  ));
+  register_sidebar(array(
+    'name'          => ('Bottom Middle'),
+    'id'            => 'bottom-middle',
+    'description'   => 'Bottom middle widget area in home page',
+    'before_widget' => '<div class="widget-bottom-middle">',
+    'after_widget'  => "</div>",
+    'before_title'  => '<h3 class="bottom-middle-widget-title">',
+    'after_title'   => '</h3>'
+  ));
+  register_sidebar(array(
+    'name'          => ('Bottom Right'),
+    'id'            => 'bottom-right',
+    'description'   => 'Bottom right widget area in home page',
+    'before_widget' => '<div class="widget-bottom-right">',
+    'after_widget'  => "</div>",
+    'before_title'  => '<h3 class="bottom-right-widget-title">',
+    'after_title'   => '</h3>'
+  ));
+  register_sidebar(array(
+    'name'          => ('Front Loader Home'),
+    'id'            => 'front-loader-home',
+    'description'   => 'Front loader for home page widget area',
+    'before_widget' => '<div class="widget-front-loader-home">',
+    'after_widget'  => "</div>",
+    'before_title'  => '<h3 class="front-loader-home-widget-title">',
+    'after_title'   => '</h3>'
+  ));
+  register_sidebar(array(
+    'name'          => ('Rear Loader Home'),
+    'id'            => 'rear-loader-home',
+    'description'   => 'Truck type for home page widget area',
+    'before_widget' => '<div class="widget-rear-loader-home">',
+    'after_widget'  => "</div>",
+    'before_title'  => '<h3 class="rear-loader-home-widget-title">',
+    'after_title'   => '</h3>'
+  ));
+  register_sidebar(array(
+    'name'          => ('Side Loader Home'),
+    'id'            => 'side-loader-home',
+    'description'   => 'Side loader for home page widget area',
+    'before_widget' => '<div class="widget-side-loader-home">',
+    'after_widget'  => "</div>",
+    'before_title'  => '<h3 class="side-loader-home-widget-title">',
+    'after_title'   => '</h3>'
+  ));
+  register_sidebar(array(
+    'name'          => ('Roll Off Home'),
+    'id'            => 'roll-off-home',
+    'description'   => 'Roll off for home page widget area',
+    'before_widget' => '<div class="widget-roll-off-home">',
+    'after_widget'  => "</div>",
+    'before_title'  => '<h3 class="roll-off-home-widget-title">',
+    'after_title'   => '</h3>'
+  ));
+  register_sidebar(array(
+    'name'          => ('Container Delivery Home'),
+    'id'            => 'container-delivery-home',
+    'description'   => 'Container Delivery for home page widget area',
+    'before_widget' => '<div class="widget-container-delivery-home">',
+    'after_widget'  => "</div>",
+    'before_title'  => '<h3 class="container-delivery-home-widget-title">',
+    'after_title'   => '</h3>'
+  ));
+  register_sidebar(array(
+    'name'          => ('Grapple Boom Home'),
+    'id'            => 'grapple-boom-home',
+    'description'   => 'Grapple Boom for home page widget area',
+    'before_widget' => '<div class="widget-grapple-boom-home">',
+    'after_widget'  => "</div>",
+    'before_title'  => '<h3 class="grapple-boom-home-widget-title">',
+    'after_title'   => '</h3>'
+  ));
+  register_sidebar(array(
+    'name'          => ('Concrete Mixer Home'),
+    'id'            => 'concrete-mixer-home',
+    'description'   => 'Concrete Mixer for home page widget area',
+    'before_widget' => '<div class="widget-concrete-mixer-home">',
+    'after_widget'  => "</div>",
+    'before_title'  => '<h3 class="concrete-mixer-home-widget-title">',
+    'after_title'   => '</h3>'
+  ));
+  register_sidebar(array(
+    'name'          => ('Cab Chasis Home'),
+    'id'            => 'cab-chasis-home',
+    'description'   => 'Cab & Chasis for home page widget area',
+    'before_widget' => '<div class="widget-cab-chasis-home">',
+    'after_widget'  => "</div>",
+    'before_title'  => '<h3 class="cab-chasis-home-widget-title">',
+    'after_title'   => '</h3>'
+  ));
+  register_sidebar(array(
+    'name'          => ('Truck Type Home'),
+    'id'            => 'trucktype-home',
+    'description'   => 'Truck type for home page widget area',
+    'before_widget' => '<div class="widget-trucktype-home">',
+    'after_widget'  => "</div>",
+    'before_title'  => '<h3 class="trucktype-home-widget-title">',
+    'after_title'   => '</h3>'
+  ));
+
+  /*SIDEBAR WIDGETS*/
+  register_sidebar(array(
+    'name'          => ('Right Sidebar'),
+    'id'            => 'right-sidebar',
+    'description'   => 'Right sidebar widget area',
+    'before_widget' => '<div class="widget-right-sidebar">',
+    'after_widget'  => "</div>",
+    'before_title'  => '<h3 class="right-sidebar-widget-title">',
+    'after_title'   => '</h3>'
+  ));
+  /*TESTIMONIAL WIDGETS*/
+  register_sidebar(array(
+    'name'          => ('Testimonial Home'),
+    'id'            => 'testimonial-home',
+    'description'   => 'Testimonial for home page widget area',
+    'before_widget' => '<div class="widget-testimonial-home">',
+    'after_widget'  => "</div>",
+    'before_title'  => '<h3 class="testimonial-home-widget-title">',
+    'after_title'   => '</h3>'
+  ));
+  /*MAP WIDGETS*/
+  register_sidebar(array(
+    'name'          => ('Map Tampa Home'),
+    'id'            => 'map-tampa-home',
+    'description'   => 'Tampa map for home page widget area',
+    'before_widget' => '<div class="widget-map-tampa">',
+    'after_widget'  => "</div>",
+    'before_title'  => '<h3 class="map-tampa-widget-title">',
+    'after_title'   => '</h3>'
+  ));
+  register_sidebar(array(
+    'name'          => ('Map Glenmoore Home'),
+    'id'            => 'map-glenmoore-home',
+    'description'   => 'Glenmoore map for home page widget area',
+    'before_widget' => '<div class="widget-map-glenmoore">',
+    'after_widget'  => "</div>",
+    'before_title'  => '<h3 class="map-glenmoore-widget-title">',
+    'after_title'   => '</h3>'
+  ));
+/*------------------
+Contact Form Widget
+-------------------*/
+register_sidebar(array(
+'name'          => ('Contact Form'),
+'id'            => 'contact-form',
+'description'   => 'Contact Form',
+'before_widget' => '<div class="widget-contact-form"',
+'after_widget'  => '</div>',
+'before_title'  => '<h3 class="contact-form-title">',
+'after_title'   => '</h3>'
+));
+}
+/* ================================================
+
+  TRUCK CUSTOM POST TYPE
+
+  ====================================================*/
 /*=======================================
 Custom taxonomy
 =========================================*/
@@ -47,8 +339,6 @@ function crunchify_create_deals_custom_taxonomy() {
     'rewrite' => array( 'slug' => 'type' ),
   ));
 }
-
-
 /*===============================
   Custom post type
 =====================================*/
@@ -474,113 +764,7 @@ acf_add_local_field_group(array (
 	),
 ));
 };
-/*===============================
-  Adds Featured Images
-=====================================*/
 
-add_theme_support('post-thumbnails');
-/*===============================
-  Add menus to my theme
-=====================================*/
-function register_my_menus(){
-  register_nav_menus(
-    array(
-      'top-menu'    => __( 'Top Menu'),
-    )
-  );
-}
-
-add_action('init', 'register_my_menus');
-
-/*===============================
-  Add three widgets to my footer
-=====================================*/
-
-function blank_widgets_init(){
-  register_sidebar(array(
-    'name'          => ('Left Footer'),
-    'id'            => 'left-footer',
-    'description'   => 'Left widget area in footer',
-    'before_widget' => '<div class="widget-footer">',
-    'after_widget'  => "</div>",
-    'before_title'  => '<h3 class="footer-widget-title">',
-    'after_title'   => '</h3>'
-  ));
-  register_sidebar(array(
-    'name'          => ('Middle Footer'),
-    'id'            => 'middle-footer',
-    'description'   => 'Middle widget area in footer',
-    'before_widget' => '<div class="widget-footer">',
-    'after_widget'  => "</div>",
-    'before_title'  => '<h3 class="footer-widget-title">',
-    'after_title'   => '</h3>'
-  ));
-  register_sidebar(array(
-    'name'          => ('Right Footer'),
-    'id'            => 'right-footer',
-    'description'   => 'Right widget area in footer',
-    'before_widget' => '<div class="widget-footer">',
-    'after_widget'  => "</div>",
-    'before_title'  => '<h3 class="footer-widget-title">',
-    'after_title'   => '</h3>'
-  ));
-  /*HOME PAGE WIDGETS*/
-  register_sidebar(array(
-    'name'          => ('Hero Image'),
-    'id'            => 'hero-image',
-    'description'   => 'Hero image area in home page',
-    'before_widget' => '<div class="widget-hero-image">',
-    'after_widget'  => "</div>",
-    'before_title'  => '<h3 class="hero-image-widget-title">',
-    'after_title'   => '</h3>'
-  ));
-  register_sidebar(array(
-    'name'          => ('About Us'),
-    'id'            => 'about-us',
-    'description'   => 'About Us widget area in home page',
-    'before_widget' => '<div class="widget-about-us">',
-    'after_widget'  => "</div>",
-    'before_title'  => '<h3 class="about-us-widget-title">',
-    'after_title'   => '</h3>'
-  ));
-  register_sidebar(array(
-    'name'          => ('Bottom Left'),
-    'id'            => 'bottom-left',
-    'description'   => 'Bottom left widget area in home page',
-    'before_widget' => '<div class="widget-bottom-left">',
-    'after_widget'  => "</div>",
-    'before_title'  => '<h3 class="bottom-left-widget-title">',
-    'after_title'   => '</h3>'
-  ));
-  register_sidebar(array(
-    'name'          => ('Bottom Middle'),
-    'id'            => 'bottom-middle',
-    'description'   => 'Bottom middle widget area in home page',
-    'before_widget' => '<div class="widget-bottom-middle">',
-    'after_widget'  => "</div>",
-    'before_title'  => '<h3 class="bottom-middle-widget-title">',
-    'after_title'   => '</h3>'
-  ));
-  register_sidebar(array(
-    'name'          => ('Bottom Right'),
-    'id'            => 'bottom-right',
-    'description'   => 'Bottom right widget area in home page',
-    'before_widget' => '<div class="widget-bottom-right">',
-    'after_widget'  => "</div>",
-    'before_title'  => '<h3 class="bottom-right-widget-title">',
-    'after_title'   => '</h3>'
-  ));
-  /*SIDEBAR WIDGETS*/
-  register_sidebar(array(
-    'name'          => ('Right Sidebar'),
-    'id'            => 'right-sidebar',
-    'description'   => 'Right sidebar widget area',
-    'before_widget' => '<div class="widget-right-sidebar">',
-    'after_widget'  => "</div>",
-    'before_title'  => '<h3 class="right-sidebar-widget-title">',
-    'after_title'   => '</h3>'
-  ));
-}
 
 add_action('widgets_init','blank_widgets_init');
  ?>
