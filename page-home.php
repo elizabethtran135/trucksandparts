@@ -49,7 +49,7 @@ get_header(); ?>
       <div class="row">
         <div class="col-md-3">
           <?php dynamic_sidebar('container-delivery-home'); ?>
-          <a href="404.php" class="btn btn-outline-light">CONTAINER DELIVERY</a>
+          <a href="404.php" class="btn btn-outline-light">Bring some rocks</a>
         </div>
         <div class="col-md-3">
           <?php dynamic_sidebar('grapple-boom-home'); ?>
