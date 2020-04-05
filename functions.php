@@ -141,15 +141,7 @@ register_sidebar(array(
     'after_title'   => '</h3>'
   ));
 
-  register_sidebar(array(
-    'name'          => ('About Us'),
-    'id'            => 'about-us',
-    'description'   => 'About Us widget area in home page',
-    'before_widget' => '<div class="widget-about-us">',
-    'after_widget'  => "</div>",
-    'before_title'  => '<h3 class="about-us-widget-title">',
-    'after_title'   => '</h3>'
-  ));
+
   register_sidebar(array(
     'name'          => ('Bottom Left'),
     'id'            => 'bottom-left',

@@ -10,11 +10,6 @@ get_header(); ?>
     </div>
   </div>
   <main class="col-md-12">
-    <div class="row">
-      <div class="col-md-12 p-4">
-        <?php dynamic_sidebar('about-us'); ?>
-      </div>
-    </div>
 
     <div class="row justify-content-center">
       <div class="col-md-9">
