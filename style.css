@@ -233,6 +233,15 @@ h3.map-glenmoore-widget-title {
 .testimonial_rotator_widget_wrap h2{
     color: black;
 }
+/*-------------------------
+Sidebar
+-------------------*/
+.widget-right-sidebar ul li {
+    list-style-type: none;
+}
+.widget-right-sidebar a {
+  color: #7a7575;
+}
 /*-------------------------------
 FOOTER
 ----------------------------------*/
@@ -517,6 +526,7 @@ CONTACT FORM
     text-align: center;
     font-size: 20px;
     font-weight: normal;
+    background-color: transparent;
   }
   .locations{
     background-color: #ee3a43;
@@ -536,6 +546,7 @@ CONTACT FORM
     text-align: center;
     font-size: 16px;
     font-weight: normal;
+    background-color: transparent;
   }
 
 }
