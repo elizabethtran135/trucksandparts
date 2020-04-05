@@ -5,8 +5,13 @@ Template Post Type: page
 */
 get_header(); ?>
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 container1">
       <?php dynamic_sidebar('hero-image'); ?>
+      <div class="heroleft">
+        <h1>NEW & USED</h1>
+        <h1>Trucks for Sale</h1>
+        <button class="pink">CALL</button>
+      </div>
     </div>
   </div>
   <main class="col-md-12">

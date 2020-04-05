@@ -69,52 +69,8 @@ h1 {
 
 ===================*/
 
-/*############################
-      2.2 HAMBURGER MENU STYLING
-############################*/
-.desktop-nav {
-    display: none;
-}
 
-button{
-  display: block;
-  width: 100px;
-  height: 100px;
-  margin: auto;
-  margin-top: 10px;
-  background-color: gray;
-  font-size: 50px;
-}
 
-.show-mobile-nav{
-  display: block;
-  height: 340px;
-  transition: height 0.5s;
-}
-
-.desktop-nav img {
-  display: none;
-}
-
-.menu a {
-    list-style-type: none;
-    text-decoration: none;
-    padding: 39px;
-    color: black;
-}
-
-.menu a:hover {
-    list-style-type: none;
-    text-decoration: none;
-    color: lightgray;
-}
-
-ul#menu-top-menu-1 {
-    list-style-type: none;
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-}
 /*MOBILE MAP SIZE*/
 iframe {
     width: 100%;
@@ -249,6 +205,7 @@ footer {
   background-color: white;
   border-top: 10px solid #012744;
   margin-top: 20px;
+  padding-left: 11%;
 }
 .sfsiplus_footerLnk {
     display: none;
@@ -264,10 +221,24 @@ STYLING FOR SPECIFIC PAGES AND POSTS!
 /*-------------------------
 CUSTOM HOME PAGE STYLING
 -----------------------*/
+
+/*----HERO IMAGE----*/
+.heroleft {
+    position: absolute;
+    top: 50%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+  }
+.heroleft h1 {
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 0;
+}
 /*###########################
     TRUCK TYPE STYLING
 
 ###########################*/
+
 
 .trucktypes {
     width: 100%;
@@ -419,7 +390,7 @@ CONTACT FORM
 .wpforms-field-hp {
     display: none;
 }
-.wpforms-submit-container button {
+.pink, .wpforms-submit-container button {
     text-align: center;
     display: block;
     text-transform: uppercase;
@@ -429,6 +400,7 @@ CONTACT FORM
     font-size: 1.3rem;
     height: inherit;
     margin: 2% auto;
+    border-color: #ee3a43;
 }
 /*############################
       DESKTOP MENU STYLING
@@ -437,6 +409,10 @@ CONTACT FORM
 @media (min-width: 768px){
   h1 {
     font-size: 3rem;
+  }
+  .heroleft h1 {
+    font-size: 1.9rem;
+    font-weight: bold;
   }
   .mobile-nav{
     display: none;
@@ -475,7 +451,7 @@ CONTACT FORM
 
   .menu a {
       list-style-type: none;
-      padding: 39px;
+      padding: 16px;
       color: white;
   }
 
@@ -549,4 +525,9 @@ CONTACT FORM
     background-color: transparent;
   }
 
+}
+@media (min-width: 990px) {
+  .menu a {
+      padding: 39px;
+    }
 }
