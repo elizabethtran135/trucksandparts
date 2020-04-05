@@ -62,7 +62,24 @@ add_action('init', 'register_my_menus');
 =====================================*/
 
 add_theme_support('post-thumbnails');
-
+register_sidebar(array(
+  'name'          => ('Hero Image'),
+  'id'            => 'hero-image',
+  'description'   => 'Hero image area in home page',
+  'before_widget' => '<div class="widget-hero-image">',
+  'after_widget'  => "</div>",
+  'before_title'  => '<h3 class="hero-image-widget-title">',
+  'after_title'   => '</h3>'
+));
+register_sidebar(array(
+  'name'          => ('Search Trucks'),
+  'id'            => 'search-trucks',
+  'description'   => 'Search bar on truck page',
+  'before_widget' => '<div class="widget-search-trucks">',
+  'after_widget'  => "</div>",
+  'before_title'  => '<h3 class="search-trucks-widget-title">',
+  'after_title'   => '</h3>'
+));
 /*===============================
   FOOTER WIDGETS
 =====================================*/
@@ -123,15 +140,7 @@ register_sidebar(array(
     'before_title'  => '<h3 class="header-widget-title">',
     'after_title'   => '</h3>'
   ));
-  register_sidebar(array(
-    'name'          => ('Hero Image'),
-    'id'            => 'hero-image',
-    'description'   => 'Hero image area in home page',
-    'before_widget' => '<div class="widget-hero-image">',
-    'after_widget'  => "</div>",
-    'before_title'  => '<h3 class="hero-image-widget-title">',
-    'after_title'   => '</h3>'
-  ));
+
   register_sidebar(array(
     'name'          => ('About Us'),
     'id'            => 'about-us',

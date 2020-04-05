@@ -1,5 +1,5 @@
 /*
-Theme Name: Trucks and Parts COMBINED SATURDAY!
+Theme Name: Trucks and Parts MASTERS!
 Theme URI:
 Author: Elizabeth Tran and Erika Jenkins
 Description: Trucks and Parts Rough Draft
@@ -325,12 +325,28 @@ CUSTOM TRUCK POST STYLING
   padding: 0 0 0 5px;
 }
 
-
-
+.text-left.pl-6 {
+    padding-left: 12px;
+}
+.individual-truck h4, h3, p {
+    margin: 0;
+    padding: 3px;
+}
+.individual-truck h4 {
+    background-color: #012744;
+    color: white;
+    margin-top: 10px;
+}
+.individual-truck h3, p {
+    background-color: white;
+}
+span.bold {
+    color: #ee3a43;
+}
 /*---------------------------
 BLOG
 ------------------------*/
-a.btn.btn-primary.btn-sm {
+.btn.btn-primary.btn-sm {
     margin-bottom: 23px;
     text-transform: uppercase;
     font-family: 'Roboto Condensed';
@@ -340,10 +356,9 @@ a.btn.btn-primary.btn-sm {
 /*------------------------
 CONTACT FORM
 --------------------*/
-form#wpforms-form-46 {
-    margin: 0 auto;
-    padding: 1%;
-    width: 340px;
+.wpforms-form {
+    width: 100% !important;
+    max-width: 750px;
     background-color: #e6e6e6;
     font-weight: bold;
     color: #012744;
@@ -352,7 +367,7 @@ form#wpforms-form-46 {
     text-align: center;
     margin: 20px 0 12px 0;
 }
-button#wpforms-submit-46 {
+button .wpforms-form {
     text-transform: uppercase;
     color: white;
     background-color: #ee3a43;

@@ -1,9 +1,10 @@
 <?php
 /* Template Name: Trucks */
 
-get_header();
+get_header();?>
 
-
+<?php dynamic_sidebar('search-trucks'); ?>
+<?php
 // Creates variable with different parameters to use
 $args = array(
     'post_type' => 'trucks',
@@ -13,7 +14,7 @@ $args = array(
     'order' => 'ASC',
 ); ?>
 
-<div class="container row">
+<div class="container row bg-light">
 
   <?php
   //Passes the paramaters created through the new WP Query
@@ -23,13 +24,17 @@ $args = array(
   while ( $loop->have_posts()){
      $loop->the_post(); ?>
 
-     <div class="individual-truck col-md-3">
+     <div class="individual-truck col-md-4 text-center justify-content-center">
     <?php
-      echo "<h2>" . get_the_title() . "</h2>";
+      echo "<h4>" . get_the_title() . "</h4>";
+
+      ?>
+      <div class="text-left pl-6">
+        <?php
       //Displays Year
       $year = get_field_object('year');
       if(isset($year)){
-        echo "<span class='year'>" . $year['value'] . " </span>";
+        echo "<h3><span class='year'>" . $year['value'] . " </span>";
         }
       //Displays Make
       $make = get_field_object('make');
@@ -39,37 +44,37 @@ $args = array(
       //Displays model
       $model = get_field_object('model');
       if(isset($model)){
-        echo "<span  class='model'>"  . $model['value'] . "</span>";
+        echo "<span  class='model'>"  . $model['value'] . "</span>" . "</h3>";
       }
-      //Featured Image
-      ?>
-      <a class="btn btn-primary btn-sm" href="<?php the_permalink();?>"><?php the_post_thumbnail('medium');?></a><?php
-
-      $frontAxle = get_field_object('front-axle-capacity');
-
       //Display front axle
+      $frontAxle = get_field_object('front-axle-capacity');
       if(isset($frontAxle)){
-        echo "<p><span class='bold'>" . $frontAxle['label'] . ": </span>" . $frontAxle['value'] . "</p>";
+        echo "<p><span class='year'>" . $frontAxle['value'] . " </span>";
       }
       //Display Body Make
       $bodyMake = get_field_object('body-make');
       if(isset($bodyMake)){
-        echo "<p><span class='bold'>" . $bodyMake['label'] . ": </span>" . $bodyMake['value'] . "</p>";
+        echo "<span class='year'>" . $bodyMake['value'] . " </span>";
       }
       //Display Body Model
       $bodyModel = get_field_object('body-model');
       if(isset($bodyModel)){
-        echo "<p><span class='bold'>" . $bodyModel['label'] . ": </span>" . $bodyModel['value'] . "</p>";
+        echo "<span class='year'>" . $bodyModel['value'] . " </span>" . "</p>";
       }
+      ?>
 
+    </div> <?php
+      //Featured Image
+    ?>
+      <a href="<?php the_permalink();?>"><?php the_post_thumbnail('medium');?></a><?php
 
       //Displays Price
       $price = get_field_object('price');
       if(isset($price)){
-        echo "<p><span class='bold'>" . $price['label'] . ": </span>" . $price['value'] . "</p>";
+        echo "<h3><span class='bold'>" . $price['value'] . "</span>" . "</h3>";
       }
       ?>
-      <a class="btn btn-primary btn-sm" href="<?php the_permalink(); ?>">View Truck </a>
+
     </div>
     <?php
   }
