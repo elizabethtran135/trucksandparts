@@ -76,9 +76,7 @@ iframe {
     width: 100%;
     padding: 20px;
 }
-/*############################
-   HAMBURGER MENU STYLING END
-############################*/
+
 /* =================
 
     2.3 Desktop Header
@@ -95,33 +93,15 @@ iframe {
 #navblue {
   background-color: #012744;
   padding-top: 8px;
+  display: none;
 }
-#menu-top-menu {
-  display: inline-flex;
-  font-family: 'Arimo', sans-serif;
-  font-weight: bold;
-  list-style-type: none;
-  text-transform: uppercase;
-}
-
-.menu a {
-    list-style-type: none;
-    padding: 39px;
-    color: white;
-}
-
-.menu a:hover {
-    list-style-type: none;
-    text-decoration: none;
-    color: lightgray;
-}
-
-@media (max-width: 769px) {
-  .desktop-nav{
+.menu {
     display: none;
-  }
 }
 
+.desktop-nav{
+  display: none;
+}
 /*-------------------------
 2.5 HERO IMAGE
 --------------------------*/
@@ -231,7 +211,7 @@ CUSTOM HOME PAGE STYLING
   }
 .heroleft h1 {
   color: white;
-  font-size: 1.2rem;
+  font-size: .8rem;
   margin-top: 0;
 }
 /*###########################
