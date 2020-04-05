@@ -244,6 +244,9 @@ footer {
 .sfsiplus_footerLnk {
     display: none;
 }
+.textwidget a {
+  color: #7a7575;
+}
 /*--------------------------------------------
 
 STYLING FOR SPECIFIC PAGES AND POSTS!
