@@ -328,6 +328,10 @@ CUSTOM TRUCK POST STYLING
 .text-left.pl-6 {
     padding-left: 12px;
 }
+
+/*----------------------
+TRUCKS Page
+---------------*/
 .individual-truck h4, h3, p {
     margin: 0;
     padding: 3px;
@@ -342,6 +346,16 @@ CUSTOM TRUCK POST STYLING
 }
 span.bold {
     color: #ee3a43;
+}
+.widget-search-trucks {
+    background-color: #ee3a43;
+    color: white;
+    text-transform: uppercase;
+    padding: 22px;
+}
+.container.row.bg-light {
+    margin: auto;
+    padding: 3% 0;
 }
 /*---------------------------
 BLOG
@@ -362,18 +376,38 @@ CONTACT FORM
     background-color: #e6e6e6;
     font-weight: bold;
     color: #012744;
+    margin: auto;
+    padding: 5px;
 }
-.wpforms-submit-container {
+.wpforms-field-row {
+    display: flex;
+}
+.wpforms-one-half {
+    display: inline-grid;
+    padding-right: 4%;
+}
+.wpforms-field-label {
+    margin: 2% 2% 2% 0;
+}
+.wpforms-field-container {
+    padding-left: 3%;
+}
+.wpforms-field-medium {
+    width: 80%;
+}
+.wpforms-field-hp {
+    display: none;
+}
+.wpforms-submit-container button {
     text-align: center;
-    margin: 20px 0 12px 0;
-}
-button .wpforms-form {
+    display: block;
     text-transform: uppercase;
     color: white;
     background-color: #ee3a43;
-    padding: 4px;
     font-family: 'Roboto Condensed', sans-serif;
-    text-align: center;
+    font-size: 1.3rem;
+    height: inherit;
+    margin: 2% auto;
 }
 /*############################
       DESKTOP MENU STYLING
