@@ -42,7 +42,8 @@ $args = array(
         echo "<span  class='model'>"  . $model['value'] . "</span>";
       }
       //Featured Image
-      the_post_thumbnail('medium');
+      ?>
+      <a class="btn btn-primary btn-sm" href="<?php the_permalink();?>"><?php the_post_thumbnail('medium');?></a><?php
 
       $frontAxle = get_field_object('front-axle-capacity');
 
@@ -66,7 +67,9 @@ $args = array(
       $price = get_field_object('price');
       if(isset($price)){
         echo "<p><span class='bold'>" . $price['label'] . ": </span>" . $price['value'] . "</p>";
-      } ?>
+      }
+      ?>
+      <a class="btn btn-primary btn-sm" href="<?php the_permalink(); ?>">View Truck </a>
     </div>
     <?php
   }
