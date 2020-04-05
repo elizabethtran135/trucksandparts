@@ -77,7 +77,9 @@ h1 {
     margin: 6%;
     border-color: #012744;
 }
-
+.cnss-social-icon img {
+    padding: 0;
+}
 
 /*MOBILE MAP SIZE*/
 iframe {
@@ -202,9 +204,8 @@ footer {
 .textwidget a {
   color: #7a7575;
 }
-.alignnone img {
+.textwidget img {
     width: auto;
-    height: auto;
 }
 
 /*--------------------------------------------

@@ -15,8 +15,8 @@
 <body <?php body_class(); ?>>
   <header>
     <div class="row desktop-nav">
-        <div class="col-lg-12 d-flex justify-content-around align-items-baseline" id="headwhite">
-            <div class="col-lg-3">
+        <div class="col-lg-12 d-flex justify-content-around align-items-end" id="headwhite">
+            <div class="col-lg-3 mt-4">
               <?php if(get_header_image() == '') {?>
                   <h1><a href="<?php get_home_url();?>"><?php bloginfo('name');?></a></h1><?php
                 }else {?>
