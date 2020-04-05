@@ -28,7 +28,7 @@ get_header(); ?>
       <div class="row">
         <div class="col-md-3">
           <?php dynamic_sidebar('front-loader-home'); ?>
-          <a href="404.php" class="btn btn-outline-light ttt">bring some rocks</a>
+          <a href="404.php" class="btn btn-outline-light ttt">FRONT LOADER</a>
         </div>
         <div class="col-md-3">
           <?php dynamic_sidebar('rear-loader-home'); ?>
