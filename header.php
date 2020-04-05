@@ -44,7 +44,7 @@
 
     </div>
 
-  <button id="hamburger">&#9776;</button>
+  
       <div class="mobile-nav">
         <div class="container">
           <div class="row justify-content-center">
