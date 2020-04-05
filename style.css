@@ -317,7 +317,9 @@ CUSTOM TRUCK POST STYLING
 .image {
   width: 100%;
 }
-
+.container {
+    margin: 1% auto;
+}
 .single-trucks .container ul li {
   list-style: none;
 }
