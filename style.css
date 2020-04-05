@@ -132,7 +132,7 @@ iframe {
 
 .widget-testimonial-home{
   width: 100%;
-  height: 800px;
+  height: auto;
 }
 
 .testimonial_rotator_widget_wrap.with-prevnext {
@@ -143,6 +143,7 @@ iframe {
 .widget-roll-off-home, .widget-container-delivery-home, .widget-grapple-boom-home,
 .widget-concrete-mixer-home, .widget-cab-chasis-home {
     width: 100px;
+    margin: auto;
 }
 
 h3.map-tampa-widget-title {
@@ -193,6 +194,11 @@ footer {
 .textwidget a {
   color: #7a7575;
 }
+.alignnone img {
+    width: auto;
+    height: auto;
+}
+
 /*--------------------------------------------
 
 STYLING FOR SPECIFIC PAGES AND POSTS!
@@ -206,7 +212,7 @@ CUSTOM HOME PAGE STYLING
 .heroleft {
     position: absolute;
     top: 50%;
-    left: 73%;
+    left: 50%;
     transform: translate(-50%, -50%);
   }
 .heroleft h1 {
@@ -392,6 +398,9 @@ CONTACT FORM
   h1 {
     font-size: 3rem;
   }
+  .heroleft {
+    left: 73%;
+  }
   .heroleft h1 {
     font-size: 1.9rem;
     font-weight: bold;
@@ -460,7 +469,7 @@ CONTACT FORM
   /* Desktop testimonial */
   .widget-testimonial-home{
     width: 100%;
-    height: 300px;
+    height: auto;
   }
 /* Desktop truck types */
   .trucktypes {
