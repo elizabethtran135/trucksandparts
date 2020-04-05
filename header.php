@@ -24,7 +24,7 @@
 
                 <?php } ?>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 text-right mt-n2 mb-2">
               <?php dynamic_sidebar('right-header'); ?>
             </div>
         </div>
@@ -44,7 +44,7 @@
 
     </div>
 
-  
+
       <div class="mobile-nav">
         <div class="container">
           <div class="row justify-content-center">

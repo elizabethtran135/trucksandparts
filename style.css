@@ -68,7 +68,15 @@ h1 {
     2.1 Mobile
 
 ===================*/
-
+.textwidget button {
+    display: inline;
+    background-color: #012744;
+    color: white;
+    font-family: 'roboto condensed', sans-serif;
+    font-size: 1rem;
+    margin: 6%;
+    border-color: #012744;
+}
 
 
 /*MOBILE MAP SIZE*/

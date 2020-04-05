@@ -4,6 +4,12 @@ Template Name: Right Sidebar
 Template Post Type: page, post
 */
 get_header(); ?>
+<div class="row">
+  <div class="col-md-12 container1">
+    <?php dynamic_sidebar('hero-image'); ?>
+    <h1 class="centered">ABOUT</h1>
+  </div>
+</div>
   <div class="container">
     <div class="row">
       <main class="col-md-9">
