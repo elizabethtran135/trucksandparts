@@ -24,7 +24,7 @@ $args = array(
   while ( $loop->have_posts()){
      $loop->the_post(); ?>
 
-     <div class="individual-truck col-md-4 text-center justify-content-center">
+     <div class="individual-truck col-md-6 col-lg-4 text-center justify-content-center">
     <?php
       echo "<h4>" . get_the_title() . "</h4>";
 

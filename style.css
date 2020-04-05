@@ -54,6 +54,7 @@ p {
 h1 {
   margin-top: 20px;
   color: #012744;
+  font-size: 2rem;
 }
 
 /* ======================================
@@ -189,7 +190,7 @@ iframe {
 
 .widget-hero-image {
     width: 100%;
-    height: 450px;
+    max-height: 450px;
     overflow: hidden;
 }
 
@@ -325,16 +326,14 @@ CUSTOM TRUCK POST STYLING
   padding: 0 0 0 5px;
 }
 
-.text-left.pl-6 {
-    padding-left: 12px;
-}
+
 
 /*----------------------
 TRUCKS Page
 ---------------*/
 .individual-truck h4, h3, p {
     margin: 0;
-    padding: 3px;
+    padding: 3px 0;
 }
 .individual-truck h4 {
     background-color: #012744;
@@ -343,6 +342,10 @@ TRUCKS Page
 }
 .individual-truck h3, p {
     background-color: white;
+}
+.individual-truck img {
+    width: 100%;
+    height: auto;
 }
 span.bold {
     color: #ee3a43;
@@ -380,7 +383,7 @@ CONTACT FORM
     padding: 5px;
 }
 .wpforms-field-row {
-    display: flex;
+    display: flow-root;
 }
 .wpforms-one-half {
     display: inline-grid;
@@ -414,7 +417,9 @@ CONTACT FORM
 ############################*/
 
 @media (min-width: 768px){
-
+  h1 {
+    font-size: 3rem;
+  }
   .mobile-nav{
     display: none;
   }
