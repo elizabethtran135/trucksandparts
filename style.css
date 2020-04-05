@@ -375,6 +375,10 @@ BLOG
     background-color: #ee3a43;
     border-color: #ee3a43;
 }
+.blog img {
+  width: 100%;
+  height: auto;
+}
 /*------------------------
 CONTACT FORM
 --------------------*/
