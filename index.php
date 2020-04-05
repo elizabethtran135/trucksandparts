@@ -11,7 +11,7 @@
        <?php if(have_posts()){
           while(have_posts()){
             the_post(); ?>
-              <?php the_post_thumbnail('full'); ?>
+              <?php the_post_thumbnail('medium'); ?>
               <h1 class="font-weight-bold"><?php the_title(); ?></h1>
               <h3><?php the_excerpt();?></h3>
               <a class="btn btn-primary btn-sm" href="<?php the_permalink(); ?>">Read More</a>
