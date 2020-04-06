@@ -333,7 +333,7 @@ TRUCKS Page
 span.bold {
     color: #ee3a43;
 }
-.widget-search-trucks {
+.widget-search-trucks, .widget-search-trucks-two {
     background-color: #ee3a43;
     color: white;
     text-transform: uppercase;
