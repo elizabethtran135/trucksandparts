@@ -2,8 +2,14 @@
 /* Template Name: Trucks */
 
 get_header();?>
-
-<?php dynamic_sidebar('search-trucks'); ?>
+<div class="row">
+  <div class="col-sm-1 col-md-6 col-lg-6">
+    <?php dynamic_sidebar('search-trucks'); ?>
+  </div>
+  <div class="col-sm-1 col-md-6 col-lg-6">
+    <?php dynamic_sidebar('search-trucks'); ?>
+  </div>
+</div>
 <?php
 // Creates variable with different parameters to use
 $args = array(
