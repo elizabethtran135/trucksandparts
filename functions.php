@@ -81,12 +81,12 @@ register_sidebar(array(
   'after_title'   => '</h3>'
 ));
 register_sidebar(array(
-  'name'          => ('Search Trucks 2'),
-  'id'            => 'search-trucks2',
+  'name'          => ('Search Trucks Two'),
+  'id'            => 'search-trucks-two',
   'description'   => 'Search bar 2 on truck page',
-  'before_widget' => '<div class="widget-search-trucks2">',
+  'before_widget' => '<div class="widget-search-trucks-two">',
   'after_widget'  => "</div>",
-  'before_title'  => '<h3 class="search-trucks2-widget-title">',
+  'before_title'  => '<h3 class="search-trucks-two-widget-title">',
   'after_title'   => '</h3>'
 ));
 /*===============================

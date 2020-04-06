@@ -7,7 +7,7 @@ get_header();?>
     <?php dynamic_sidebar('search-trucks'); ?>
   </div>
   <div class="col-sm-12 col-md-6 col-lg-6">
-    <?php dynamic_sidebar('search-trucks2'); ?>
+    <?php dynamic_sidebar('search-trucks-two'); ?>
   </div>
 </div>
 <?php
