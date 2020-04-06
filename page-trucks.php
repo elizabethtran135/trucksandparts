@@ -2,12 +2,12 @@
 /* Template Name: Trucks */
 
 get_header();?>
-<div class="row">
-  <div class="col-sm-1 col-md-6 col-lg-6">
+<div class="row pink2">
+  <div class="col-sm-12 col-md-6 col-lg-6">
     <?php dynamic_sidebar('search-trucks'); ?>
   </div>
-  <div class="col-sm-1 col-md-6 col-lg-6">
-    <?php dynamic_sidebar('search-trucks'); ?>
+  <div class="col-sm-12 col-md-6 col-lg-6">
+    <?php dynamic_sidebar('search-trucks2'); ?>
   </div>
 </div>
 <?php

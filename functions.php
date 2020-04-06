@@ -80,6 +80,15 @@ register_sidebar(array(
   'before_title'  => '<h3 class="search-trucks-widget-title">',
   'after_title'   => '</h3>'
 ));
+register_sidebar(array(
+  'name'          => ('Search Trucks 2'),
+  'id'            => 'search-trucks2',
+  'description'   => 'Search bar 2 on truck page',
+  'before_widget' => '<div class="widget-search-trucks2">',
+  'after_widget'  => "</div>",
+  'before_title'  => '<h3 class="search-trucks2-widget-title">',
+  'after_title'   => '</h3>'
+));
 /*===============================
   FOOTER WIDGETS
 =====================================*/
