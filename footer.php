@@ -7,7 +7,7 @@
       <div class="col-md-3 py-2">
         <?php dynamic_sidebar('middle-footer'); ?>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 py-2">
         <?php if(get_header_image() == '') {?>
             <h1><a href="<?php get_home_url();?>"><?php bloginfo('name');?></a></h1><?php
           }else {?>
