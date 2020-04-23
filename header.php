@@ -20,7 +20,7 @@
               <?php if(get_header_image() == '') {?>
                   <h1><a href="<?php get_home_url();?>"><?php bloginfo('name');?></a></h1><?php
                 }else {?>
-                  <a href="<?php get_home_url();?>"><img src="<?php header_image();?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" atl="logo" /></a>
+                  <a class="py-2" href="<?php get_home_url();?>"><img src="<?php header_image();?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" atl="logo" /></a>
 
                 <?php } ?>
             </div>

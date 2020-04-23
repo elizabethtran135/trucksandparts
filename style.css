@@ -226,7 +226,7 @@ CUSTOM HOME PAGE STYLING
   }
 .heroleft h1 {
   color: white;
-  font-size: .8rem;
+  font-size: 1.2rem;
   margin-top: 0;
 }
 /*###########################
@@ -406,7 +406,12 @@ CONTACT FORM
 /*############################
       DESKTOP MENU STYLING
 ############################*/
-
+@media (min-width: 626px) {
+  .heroleft h1 {
+    font-size: 1.9rem;
+    font-weight: bold;
+  }
+}
 @media (min-width: 768px){
   h1 {
     font-size: 3rem;
@@ -414,10 +419,7 @@ CONTACT FORM
   .heroleft {
     left: 73%;
   }
-  .heroleft h1 {
-    font-size: 1.9rem;
-    font-weight: bold;
-  }
+
   .mobile-nav{
     display: none;
   }
