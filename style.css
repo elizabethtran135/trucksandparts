@@ -401,6 +401,7 @@ CONTACT FORM
     font-size: 1.3rem;
     height: inherit;
     padding: 1% 36%;
+    max-width: 205px;
     margin: 2% auto;
     border-color: #ee3a43;
 }
