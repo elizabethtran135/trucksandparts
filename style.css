@@ -406,7 +406,7 @@ CONTACT FORM
 /*############################
       DESKTOP MENU STYLING
 ############################*/
-@media (min-width: 626px) {
+@media (min-width: 536px) {
   .heroleft h1 {
     font-size: 1.9rem;
     font-weight: bold;
