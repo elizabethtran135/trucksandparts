@@ -12,7 +12,7 @@ get_header(); ?>
 </div>
   <div class="container">
     <div class="row">
-      <main class="col-md-9">
+      <main class="col-md-9 px-4">
         <?php
           if(have_posts()){
             while(have_posts()){
