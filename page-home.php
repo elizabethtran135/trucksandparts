@@ -14,7 +14,7 @@ get_header(); ?>
       </div>
     </div>
   </div>
-  <main class="col-md-12">
+  <main>
 
     <div class="row justify-content-center">
       <div class="col-md-9">

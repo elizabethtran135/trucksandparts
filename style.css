@@ -79,7 +79,7 @@ h1 {
     color: white;
     font-family: 'roboto condensed', sans-serif;
     font-size: 1rem;
-    margin: 6%;
+    margin: 2%;
     border-color: #012744;
 }
 .cnss-social-icon img {
@@ -97,8 +97,8 @@ iframe {
     2.3 Desktop Header
 
 ===================*/
-.desktop-nav img {
-  max-width: 150px;
+header .desktop-nav img {
+  max-width: 180px;
   object-fit: contain;
 }
 .desktop-nav {
