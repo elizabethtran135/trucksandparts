@@ -100,7 +100,6 @@ iframe {
 .desktop-nav img {
   max-width: 150px;
   object-fit: contain;
-  padding-left: 20px;
 }
 .desktop-nav {
     background-color: white;
@@ -452,7 +451,7 @@ CONTACT FORM
   .desktop-nav img {
     max-width: 150px;
     object-fit: contain;
-    padding-left: 20px;
+    vertical-align: inherit;
     display: block;
   }
   #navblue {
