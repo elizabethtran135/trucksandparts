@@ -68,6 +68,11 @@ h1 {
     2.1 Mobile
 
 ===================*/
+.mobile-nav img {
+    width: 168px;
+    height: auto;
+    padding: 10px;
+}
 .textwidget button {
     display: inline;
     background-color: #012744;
