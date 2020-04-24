@@ -213,7 +213,8 @@ footer {
 .textwidget img {
     width: auto;
 }
-img.alignnone.size-thumbnail.wp-image-135, img.alignnone.size-full.wp-image-134 {
+.wp-image-135,
+.wp-image-134 {
     width: 27px;
 }
 
