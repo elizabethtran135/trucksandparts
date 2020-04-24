@@ -215,8 +215,11 @@ footer {
 img.alignnone.size-full.wp-image-135, img.alignnone.size-full.wp-image-134 {
     width: 27px;
     height: auto;
+    margin-top: 3px;
 }
-
+footer .row {
+  margin-left: 0px;
+}
 /*--------------------------------------------
 
 STYLING FOR SPECIFIC PAGES AND POSTS!
