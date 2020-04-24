@@ -1,11 +1,8 @@
 <?php wp_footer(); ?>
   <footer>
     <div class="row justify-content-center">
-      <div class="col-md-4 py-2">
+      <div class="col-md-9 py-2">
         <?php dynamic_sidebar('left-footer'); ?>
-      </div>
-      <div class="col-md-4 py-2">
-        <?php dynamic_sidebar('middle-footer'); ?>
       </div>
       <div class="mobile-nav">
         <div class="container">
