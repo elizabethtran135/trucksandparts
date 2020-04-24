@@ -11,8 +11,8 @@ get_header(); ?>
   </div>
 </div>
   <div class="container">
-    <div class="row">
-      <main class="col-md-9 px-4">
+    <div class="row px-4">
+      <main class="col-md-9">
         <?php
           if(have_posts()){
             while(have_posts()){

@@ -542,6 +542,9 @@ CONTACT FORM
     font-weight: normal;
     background-color: transparent;
   }
+  footer {
+    padding-left: inherit;
+  }
 
 }
 @media (min-width: 990px) {
