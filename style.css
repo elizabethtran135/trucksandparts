@@ -514,11 +514,8 @@ CONTACT FORM
   }
 /* Desktop truck types */
   .trucktypes {
-      width: 100%;
-      background-color: #0060aa;
-      padding-bottom: 100px;
-      padding-left: 60px;
-      margin: 0px;
+      padding-bottom: 32px;
+
   }
   .trucktypes h2{
     color: white;
@@ -530,11 +527,7 @@ CONTACT FORM
   }
 
   .trucktypes p{
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    font-weight: normal;
-    background-color: transparent;
+    padding-bottom: 27px;
   }
   .locations{
     background-color: #ee3a43;
