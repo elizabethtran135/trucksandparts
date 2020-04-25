@@ -447,7 +447,7 @@ CONTACT FORM
 }
 @media (min-width:580px) {
   footer {
-    padding-left: 2%;
+    padding-left: 6%;
   }
   .mobile-nav{
     display: none;
@@ -565,10 +565,7 @@ CONTACT FORM
     font-weight: normal;
     background-color: transparent;
   }
-  footer {
-    padding-left: 6%;
-  }
-
+  
 }
 @media (min-width: 990px) {
   .menu a {
