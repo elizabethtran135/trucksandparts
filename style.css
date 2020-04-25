@@ -519,7 +519,11 @@ CONTACT FORM
   }
 /* Desktop truck types */
   .trucktypes {
-      padding-bottom: 32px;
+    padding-bottom: 100px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: 0px;
+
 
   }
   .trucktypes h2{
