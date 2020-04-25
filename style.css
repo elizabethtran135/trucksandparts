@@ -330,7 +330,9 @@ CUSTOM TRUCK POST STYLING
     width: inherit;
     height: auto;
 }
-
+.foobox img {
+  width: 100%;
+}
 
 /*----------------------
 TRUCKS Page
