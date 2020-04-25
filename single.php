@@ -3,7 +3,7 @@
         if(have_posts()){
           while(have_posts()){
             the_post(); ?>
-            <div class="col-md-12 container1">
+            <div class="container1">
               <?php the_post_thumbnail('large'); ?>
               <h1 class="centered entry-title py-4"><?php the_title();?></h1>
             </div>

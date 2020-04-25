@@ -326,7 +326,10 @@ CUSTOM TRUCK POST STYLING
 .single-trucks .container ul {
   padding: 0 0 0 5px;
 }
-
+.truckposthero img {
+    width: inherit;
+    height: auto;
+}
 
 
 /*----------------------
