@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title><?php bloginfo('name'); ?></title>
 
-<!---link css--->
+<!---link css-->
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>"/>
 
 <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
