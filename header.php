@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title><?php bloginfo('name'); ?></title>
 
-<!---link css---->
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url');?>"/>
+<!---link css--->
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>"/>
 
 <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
 
@@ -20,7 +20,7 @@
               <?php if(get_header_image() == '') {?>
                   <h1><a href="<?php get_home_url();?>"><?php bloginfo('name');?></a></h1><?php
                 }else {?>
-                  <a class="py-2" href="<?php get_home_url();?>"><img src="<?php header_image();?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" atl="logo" /></a>
+                  <a class="py-2" href="<?php get_home_url();?>"><img src="<?php header_image();?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="logo" /></a>
 
                 <?php } ?>
             </div>
@@ -51,7 +51,7 @@
             <?php if(get_header_image() == '') {?>
                 <h1><a href="<?php get_home_url();?>"><?php bloginfo('name');?></a></h1><?php
               }else {?>
-                <a href="<?php get_home_url();?>"><img src="<?php header_image();?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" atl="logo" /></a>
+                <a href="<?php get_home_url();?>"><img src="<?php header_image();?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="logo" /></a>
 
               <?php } ?>
           </div>
