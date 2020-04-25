@@ -18,7 +18,7 @@
         </div>
 
         <div class="col-md-6">
-          <h3>Body Specifications</h3>
+          <h3 class="pl-2">Body Specifications</h3>
           <ul>
     				<?php
     					$bodyType = get_field_object('body-type');
@@ -55,7 +55,7 @@
         </div>
 
         <div class="col-md-6">
-          <h3>Chassis Specifications</h3>
+          <h3 class="pl-2">Chassis Specifications</h3>
           <ul>
             <?php
               $newUsed = get_field_object('new-used');
@@ -192,7 +192,7 @@
           </ul>
         </div>
 
-        <div class="row">
+        <div class="row pl-4">
           <h4 class="col-md-12">Truck Images</h4>
           <?php
             //Get the images ids from the post_metadata
