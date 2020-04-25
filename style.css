@@ -157,7 +157,7 @@ header .desktop-nav img {
 .widget-front-loader-home, .widget-rear-loader-home, .widget-side-loader-home,
 .widget-roll-off-home, .widget-container-delivery-home, .widget-grapple-boom-home,
 .widget-concrete-mixer-home, .widget-cab-chasis-home {
-    width: 100px;
+    width: 200px;
     margin: auto;
 }
 
@@ -422,6 +422,11 @@ CONTACT FORM
   .heroleft h1 {
     font-size: 1.9rem;
     font-weight: bold;
+  }
+}
+@media (min-width:580px) and (max-width: 760px) {
+  footer {
+    padding-left: 2%;
   }
 }
 @media (min-width: 768px){
