@@ -35,6 +35,10 @@ Text domain: web interactivity
         1.  UNIVERSAL STYLING
 
   ====================================================*/
+body {
+  width: auto;
+}
+
 .container{
   padding: 0px;
   margin: 0px;
@@ -98,7 +102,7 @@ iframe {
 
 ===================*/
 header .desktop-nav img {
-  max-width: 180px;
+  max-width: 200px;
   object-fit: contain;
 }
 .desktop-nav {
@@ -159,6 +163,7 @@ header .desktop-nav img {
 .widget-concrete-mixer-home, .widget-cab-chasis-home {
     width: 200px;
     margin: auto;
+    padding: 9px;
 }
 
 h3.map-tampa-widget-title {
