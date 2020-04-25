@@ -1,7 +1,7 @@
 <?php wp_footer(); ?>
   <footer>
     <div class="row justify-content-center">
-      <div class="col-md-9 py-2">
+      <div class="col-sm-8 col-md-9 py-2">
         <?php dynamic_sidebar('left-footer'); ?>
       </div>
       <div class="mobile-nav">
@@ -16,7 +16,7 @@
           </div>
         </div>
       </div>
-      <div class="desktop-nav col-md-3 py-2">
+      <div class="desktop-nav col-sm-4 col-md-3 py-2">
         <?php if(get_header_image() == '') {?>
             <h1><a href="<?php get_home_url();?>"><?php bloginfo('name');?></a></h1><?php
           }else {?>
