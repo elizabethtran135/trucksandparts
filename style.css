@@ -449,19 +449,19 @@ CONTACT FORM
   footer {
     padding-left: 6%;
   }
-  .mobile-nav{
+  footer .mobile-nav{
     display: none;
   }
-  .row.desktop-nav {
+  footer .row.desktop-nav {
       width: 100%;
       margin: 0;
   }
-  .desktop-nav {
+  footer .desktop-nav {
     display: inline-flex;
     background-color: white;
   }
 
-  .desktop-nav img {
+  footer .desktop-nav img {
     max-width: 150px;
     object-fit: contain;
     vertical-align: inherit;
@@ -479,7 +479,24 @@ CONTACT FORM
   button{
     display: none;
   }
+  header .mobile-nav{
+    display: none;
+  }
+  header .row.desktop-nav {
+      width: 100%;
+      margin: 0;
+  }
+  header .desktop-nav {
+    display: inline-flex;
+    background-color: white;
+  }
 
+  header .desktop-nav img {
+    max-width: 150px;
+    object-fit: contain;
+    vertical-align: inherit;
+    display: block;
+  }
   #navblue {
     display: inline-flex;
     background-color: #012744;
@@ -565,7 +582,7 @@ CONTACT FORM
     font-weight: normal;
     background-color: transparent;
   }
-  
+
 }
 @media (min-width: 990px) {
   .menu a {
