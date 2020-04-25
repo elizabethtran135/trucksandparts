@@ -330,7 +330,7 @@ CUSTOM TRUCK POST STYLING
     width: inherit;
     height: auto;
 }
-.foobox img {
+a.foobox.fbx-link.fbx-instance img {
   width: 100%;
 }
 
