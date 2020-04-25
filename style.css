@@ -185,6 +185,7 @@ h3.map-glenmoore-widget-title {
 .testimonial_rotator_widget_wrap h2{
     color: black;
 }
+
 /*-------------------------
 Sidebar
 -------------------*/
@@ -356,7 +357,7 @@ span.bold {
   background-color: #ee3a43;
 }
 /*---------------------------
-BLOG
+BLOG POSTS
 ------------------------*/
 .btn.btn-primary.btn-sm {
     margin-bottom: 23px;
@@ -367,6 +368,10 @@ BLOG
 }
 .blog img {
   width: 100%;
+  height: auto;
+}
+.container1 img {
+  width: inherit;
   height: auto;
 }
 /*------------------------
