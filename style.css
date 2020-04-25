@@ -332,6 +332,8 @@ CUSTOM TRUCK POST STYLING
 }
 a.foobox.fbx-link img {
   width: 100%;
+  max-width:315px;
+  padding-bottom: 10px;
 }
 
 /*----------------------
