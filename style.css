@@ -185,7 +185,11 @@ h3.map-glenmoore-widget-title {
 .testimonial_rotator_widget_wrap h2{
     color: black;
 }
-
+.testimonial_rotator.template-headlined .testimonial_rotator_quote {
+    font-size: 1.01rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
 /*-------------------------
 Sidebar
 -------------------*/
