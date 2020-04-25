@@ -424,24 +424,11 @@ CONTACT FORM
     font-weight: bold;
   }
 }
-@media (min-width:580px) and (max-width: 760px) {
+@media (min-width:580px) {
   footer {
     padding-left: 2%;
   }
-}
-@media (min-width: 768px){
-  h1 {
-    font-size: 3rem;
-  }
-  .heroleft {
-    left: 73%;
-  }
-
   .mobile-nav{
-    display: none;
-  }
-
-  button{
     display: none;
   }
   .row.desktop-nav {
@@ -459,6 +446,19 @@ CONTACT FORM
     vertical-align: inherit;
     display: block;
   }
+}
+@media (min-width: 768px){
+  h1 {
+    font-size: 3rem;
+  }
+  .heroleft {
+    left: 73%;
+  }
+
+  button{
+    display: none;
+  }
+
   #navblue {
     display: inline-flex;
     background-color: #012744;
